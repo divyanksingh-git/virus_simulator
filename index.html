@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel = "stylesheet" href="style.css">
+        <title>Virus Simulator</title>
+        <script type="text/javascript" src="input.js"></script>
+        <script type="text/javascript" src="plotly.js"></script>
+        <script type="text/javascript" src="phaser.min.js"></script>
+        <script type="text/javascript" src="visual.js"></script>
+    </head>
+    <body>
+    <div id= "Vcontainer">
+    <div id = "phaserContainer"></div>
+    <div id="myChart"></div>
+    <div id="Tcontainer">
+     <div class="slidecontainer">
+  <p>Population: <input type="range" min="0" max="500" value="100" class="slider" id="population"></p><br>
+  <p>Infected:<input type="range" min="0" max="3" value="1" class="slider" id="infected"> </p><br>
+  <p>Infection Rate:<input type="range" min="0" max="100" value="50" class="slider" id="infectionRate"></p><br>
+  <p>Death Rate:<input type="range" min="0" max="100" value="50" class="slider" id="deathRate"></p><br>
+  <p>Precautions:<input type="range" min="0" max="10" value="5" class="slider" id="pPrecaution"></p><br>
+</div>
+</div>
+<p class ="value_r"><div class="value" id="popu"></div></p><br>
+<p class ="value_r"><div class="value" id="infd"></div></p><br>
+<p class ="value_r"><div class="value" id="infr"></div></p><br>
+<p class ="value_r"><div class="value" id="der"></div></p><br>
+<p class ="value_r"><div class="value" id="pre"></div></p><br>
+<p class ="value_r"><div class="value" id="sim"onClick=simulate()>SIMULATE</div></p><br>
+</div>
+
+    </body>
+</html>
